@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { Hello } from './Hello';
+import { Chart } from './Chart';
 import './style.css';
 
 interface AppProps { }
@@ -11,7 +11,7 @@ interface AppState {
 const App  = () => {
   return (
     <div>
-      <Hello />
+      <Chart />
     </div>
   );
 }

@@ -12,13 +12,13 @@ const generateData = (num = 12) => {
   return d;
 };
 
-export const Hello = () => {
+export const Chart = () => {
   const [data, setData] = useState(generateData());
   const [stacked, setStacked] = useState(true);
 
   return (
     <div>
-
+      <h1>Recharts</h1>
       <button
         style={{ marginRight: '5px' }}
         onClick={() => {
@@ -63,10 +63,10 @@ export const Hello = () => {
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
-        <Area animationDuration={400} fillOpacity="1" dataKey="uv" stackId={stacked ? "1": "1"} stroke="#45227B" strokeWidth={2} fill="#45227B" />
-        <Area animationDuration={400} fillOpacity="1" dataKey="pv" stackId={stacked ? "1": "2"} stroke="#6E36C5" strokeWidth={2} fill="#6E36C5" />
-        <Area animationDuration={400} fillOpacity="1" dataKey="amt" stackId={stacked ? "1": "3"} stroke="#8A43F6" strokeWidth={2} fill="#8A43F6" />
-        <Area animationDuration={400} fillOpacity="1" dataKey="amt" stackId={stacked ? "1": "4"} stroke="#A06DEE" strokeWidth={2} fill="#A06DEE" />
+        <Area animationDuration={400} fillOpacity="1" dataKey="uv" stackId={stacked ? "1": "1"} stroke="#25227B" strokeWidth={2} fill="#45227B" />
+        <Area animationDuration={400} fillOpacity="1" dataKey="pv" stackId={stacked ? "1": "2"} stroke="#4E36C5" strokeWidth={2} fill="#6E36C5" />
+        <Area animationDuration={400} fillOpacity="1" dataKey="amt" stackId={stacked ? "1": "3"} stroke="#6A43F6" strokeWidth={2} fill="#8A43F6" />
+        <Area animationDuration={400} fillOpacity="1" dataKey="amt" stackId={stacked ? "1": "4"} stroke="#806DEE" strokeWidth={2} fill="#A06DEE" />
       </AreaChart>
     </div>
   );
