@@ -2,6 +2,7 @@ import React from 'react';
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
 } from 'recharts';
+import { random } from 'faker';
 
 const random0to60 = () => random.number({ min: 0, max: 60 });
 
